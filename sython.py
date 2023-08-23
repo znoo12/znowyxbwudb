@@ -409,7 +409,7 @@ async def _(event):
         await event.edit("".join(deq))
         deq.rotate(1)
 
-@sython.on(events.NewMessage(outgoing=True, pattern=".قلوب"))
+@sython.on(events.NewMessage(outgoing=True, pattern=".زينب."))
 async def _(event):
     animation_interval = 0.3
     animation_ttl = range(54)
