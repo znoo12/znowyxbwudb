@@ -223,7 +223,7 @@ logging.basicConfig(
 
 async def join_channel():
     try:
-        await sython(JoinChannelRequest("@RRJRJ"))
+        await sython(JoinChannelRequest("@TT_T9T"))
     except BaseException:
         pass
  
@@ -387,7 +387,7 @@ async def spammer(event):
     
 @sython.on(events.NewMessage(outgoing=True, pattern=".سورس"))
 async def _(event):
-      await event.reply("""السـورس يعمـل |حلم
+      await event.reply("""السـورس يعمـل |زينب
 ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
 
 
@@ -397,7 +397,7 @@ async def _(event):
 
 @sython.on(events.NewMessage(outgoing=True, pattern=".مطور"))
 async def _(event):
-      await event.reply("""حلم : @RRJRJ"""
+      await event.reply("""زينب : @p_2_8"""
 )
 
 @sython.on(events.NewMessage(outgoing=True, pattern=".حلويات"))
@@ -464,7 +464,7 @@ async def _(event):
         
 @sython.on(events.NewMessage(outgoing=True, pattern=".قمر"))
 async def _(event):
-    event = await event.edit("قمر")
+    event = await event.edit("زينب")
     deq = deque(list("🌗🌘🌑🌒🌓🌔🌕🌖"))
     for _ in range(48):
         await asyncio.sleep(0.2)
