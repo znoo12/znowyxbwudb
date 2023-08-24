@@ -138,10 +138,10 @@ async def _(event):
         channel_entity = await sython.get_entity(bot_username)
         await sython.send_message('@zmmbot', '/start')
         await asyncio.sleep(5)
-        msg0 = await sython.get_messages('@zmmbot', limit=1)
+        msg0 = await sython.get_messages('@EEObot', limit=1)
         await msg0[0].click(2)
         await asyncio.sleep(5)
-        msg1 = await sython.get_messages('@zmmbot', limit=1)
+        msg1 = await sython.get_messages('@EEObot', limit=1)
         await msg1[0].click(0)
 
         chs = 1
