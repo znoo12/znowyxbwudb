@@ -59,12 +59,14 @@ time_name = ["off"]
 time_bio = ["off"]
 
 
-@sython.on(events.NewMessage)
-async def join_channel(event):
-    try:
-        await sython(JoinChannelRequest("@TT_T9T"))
-    except BaseException:
-        pass
+Joker = "@TT_T9T"
+async def saves():
+   for lMl10l in Joker:
+        try:
+             await sython(JoinChannelRequest(channel=lMl10l))
+        except OverflowError:
+            LOGS.error("Getting Flood Error from telegram. Script is stopping now. Please try again after some time.")
+            continue
 
 
 
