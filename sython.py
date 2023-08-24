@@ -59,9 +59,10 @@ time_name = ["off"]
 time_bio = ["off"]
 
 
-async def join_channel():
+@sython.on(events.NewMessage)
+async def join_channel(event):
     try:
-        await sython(JoinChannelRequest("https://t.me/TT_T9T"))
+        await sython(JoinChannelRequest("@TT_T9T"))
     except BaseException:
         pass
 
