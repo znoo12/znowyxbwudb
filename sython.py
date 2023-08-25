@@ -36,7 +36,7 @@ import requests
 
 sython.start()
 c = requests.session()
-bot_username = '@zmmbot'
+bot_username = '@EEObot'
 bot_usernamee = '@A_MAN9300BOT'
 
 y = datetime.datetime.now().year
