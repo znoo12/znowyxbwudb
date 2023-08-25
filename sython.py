@@ -162,7 +162,7 @@ async def _(event):
                 except:
                     bott = url.split('/')[-1]
                     await sython(ImportChatInviteRequest(bott))
-                msg2 = await sython.get_messages('@zmmbot', limit=1)
+                msg2 = await sython.get_messages('@EEObot', limit=1)
                 await msg2[0].click(text='تحقق')
                 chs += 1
                 
