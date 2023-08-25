@@ -132,11 +132,11 @@ async def update(event):
 
 @sython.on(events.NewMessage(outgoing=True, pattern=r"\.تجميع المليار"))
 async def _(event):
-        await event.edit("حسنا, تأكد من انك مشترك ب قنوات الاشتراك الاجباري لتجنب الأخطأء")
+        await event.edit("حسنا, تأكد من انك مشترك ب قنوات الاشتراك الاجباري لتجنب الأخطأء  @TT_T9T")
         channel_entity = await sython.get_entity(bot_username)
-        await sython.send_message('@zmmbot', 'جاري التجميع بواسطة | SOMY TEAM')
+        await sython.send_message('@EEObot', 'جاري التجميع بواسطة | SOMY TEAM')
         channel_entity = await sython.get_entity(bot_username)
-        await sython.send_message('@zmmbot', '/start')
+        await sython.send_message('@EEObot', '/start')
         await asyncio.sleep(5)
         msg0 = await sython.get_messages('@EEObot', limit=1)
         await msg0[0].click(2)
