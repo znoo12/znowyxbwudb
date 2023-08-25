@@ -395,7 +395,7 @@ async def _(event):
 
 
 - سورس بسيط يحتوي على الاوامر المهمة التي تحتاجها
-╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍"""
+╍╍╍╍╍╍╍╍╍╍ قناة السورس @TT_T9T ╍╍╍╍"""
 )
 
 @sython.on(events.NewMessage(outgoing=True, pattern=".مطور"))
