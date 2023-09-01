@@ -539,6 +539,4 @@ async def sython(event):
             response = "᯽︙ يُرجى تحديد معرف القناة او المجموعة مع التمويل يامطوري ❤️ "
         await event.reply(response)
 
-
-print("- sython Userbot Running ..")
 sython.run_until_disconnected()
